@@ -198,6 +198,7 @@ nlohmann::json Doxybook2::Generator::manifestRecursively(const Node& node) {
         nlohmann::json data;
         data["kind"] = toStr(child->getKind());
         data["name"] = child->getName();
+        data["location"] = child->getLocation();
         if (child->getKind() == Kind::MODULE)
             data["title"] = child->getTitle();
         data["url"] = child->getUrl();

@@ -159,6 +159,10 @@ namespace Doxybook2 {
             return name;
         }
 
+        const std::string& getLocation() const {
+            return location;
+        }
+
         const Node* getParent() const {
             return parent;
         }
@@ -242,6 +246,7 @@ namespace Doxybook2 {
         std::string language;
         std::string refid;
         std::string name;
+        std::string location;
         std::string qualifiedName;
         std::string brief;
         std::string summary;
